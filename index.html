@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Town without Roads <">
+	<meta name="author" content="Town without Roads <">
+
+	<title>Town without Roads</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png">
+
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="col-lg-3">
+			<div class="cg-sidebar" style="position:fixed">
+				<ul class="nav cg-sidenav">
+					
+					<li><a href="#intro">Introduction</a></li>              
+					<li><a href="#howtomap">How to Map</a></li>	
+					<li><a href="#challenge">Mapping Challenge</a></li>		
+					<li><a href="#howtouse">How to use the data</a></li>	
+                                        <li><a href="#resources">Other Resources</a></li>	
+
+					<br />
+					<li style="margin: 25px 0 0 15px;">
+						<div id="google_translate_element"></div>
+						<script type="text/javascript">
+							function googleTranslateElementInit() {
+								new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_RIGHT}, 'google_translate_element');
+							}
+						</script>
+						<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+					</li>
+					<li style="margin:5px;"><br /><em>In collaboration with:</em></li>
+					<li style="margin:5px;"><a href="http://openstreetmap.org.ph/" target="_blank"><img src="img/osmph_logo.png" style="width: 100px; height: auto;"></a>
+					
+					<br />
+ 				</ul>
+			</div>
+		</div>
+
+		<div class="col-lg-9" style="background-color:#f5f5f5;">		
+			<div class="cg-intro container" id="intro">
+				<h1>Towns with no Roads?</h1>
+				<p class="lead">Let's improve the location of <code>place=town</code> nodes in OpenStreetMap</p> 
+			</div>    
+		<div class="chapter">
+				<img width="100%" src="img/old_manila.jpg" alt="Stamen Watercolor" />
+				<span class="caption">Plano de Manila y sus Arrables, Francisco J. de Gamoneda ; imp. lit. de Ramon Montes, original scale 1:10,000, 1898. <a href="<https://www.lib.utexas.edu/maps/philippines.html" target="_blank">Perry-Castañeda Library Map Collection</a>.</span>
+
+				<p>Location of settlements such as cities, towns and villages are very important features that should be in any map like <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM). Most towns and cities tagged as  <code><a href="http://wiki.openstreetmap.org/wiki/Tag:place%3Dtown" target="_blank">place=town or city</a></code> in the Philippines are already added in the OSM.  Unfortunately, some of them are not located in the town's center or plaza.  You can help improve the location of Philippine towns in OSM.
+                                
+		</div>
+		<div class="chapter">
+			<div class="page-header">
+				<h1 id="howtomap">How to Map</h1>
+			</div>
+           		<h3>Editing data in OpenStreetMap</h3>
+			<p>Mapping in OpenStreetMap is as easy as these 3 steps.</p>
+				<ol>
+				  <li>Set up an account and get a log in from 
+				    <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>.</li>
+				  <li>Learn to map. Watch this video and follow the instructions.</li>
+				<br />
+				<iframe width="100%" height="400" src="//www.youtube.com/embed/Ir-3K0pjwOI" frameborder="0" allowfullscreen></iframe>
+				<br />				
+				<span class="caption">Introduction to editing in OpenStreetMap by <a href="http://mapgive.state.gov" target="_blank">http://mapgive.state.gov</a>. </span>
+				<br />
+				<li>Start mapping! </li>
+				</ol>
+			</p>
+
+
+<div class="chapter">
+	<div class="page-header">
+		<h1 id="challenge">Mapping Challenge</h1>
+	</div>
+
+	<h3>Drag the Town node near the town center</h3>
+
+      <object data="map.html" width="100%" height="400px">
+	<embed src="map.html" width="100%" height="400px"> </embed>
+	Error: data could not be displayed at the moment, server maybe busy.
+      </object>
+
+	<p>The map above shows a 2 km square where a town node is located.  Within this square, we computed the length of roads.  The squares shown are towns where there are no roads.  That doesn't look right.  Town nodes are normally placed within the town's center where "a range of shops and facilities used by people from nearby villages". If you think the town node is misplaced, help us improve the location in OSM.</p> 
+
+	 <ol>
+	   <li>Browse the map above to check towns with no roads.  Zoom-in close enough</li>
+	   <li>Click the <code>"i"</code> button on the lower right corner of the map and click <code>Improve this map</code> link.</li>
+           <li>This will open your preferred OSM editor (either iD, JOSM or potlatch).  Simply drag the <code>place=town</code> node to it's correct location.</li>
+           <li>Also add as much detail within the town center such as amenities, buildings, roads and other structures.</li>
+	   <li>When saving your edits, include this comment to your changeset <code>#improve_noroadtown</code>.</li>
+	   <br />
+  	   <iframe width="100%" height="400" src="//www.youtube.com/embed/9Q_dLQF8T-I" frameborder="0" allowfullscreen></iframe>
+	   <br />
+	 </ol>
+	</p>
+
+
+<h3>Contributions </h3>
+
+      <h4>Last 7 days of edits</h4>
+      <object data="http://resultmaps.neis-one.org/osm-changesets?comment=improve_noroadtown#6/12.683/122.267" width="100%" height="700px">
+	<embed src="http://resultmaps.neis-one.org/osm-changesets?comment=improve_noroadtown#6/12.683/122.267" width="100%" height="700px"> </embed>
+	Error: data could not be displayed at the moment, server maybe busy.
+      </object>
+      <span class="caption">Latest edits with the changeset tag <code>"#improve_noroadtown"</code> from <a href="http://resultmaps.neis-one.org/osm-changesets?comment=improve_noroadtown#6/12.683/122.267" target="_blank">http://resultmaps.neis-one.org/osm-changesets</a>.</span>
+
+</p>
+
+
+<div class="chapter">
+	<div class="page-header">
+		<h1 id="resources">Other Resources</h1>
+	</div>
+	<ul>
+	        <li><a href="http://wiki.openstreetmap.org" target="_blank">OpenStreetMap</a> is a project to create and distribute free geographic data for the world. It is being built by volunteer contributors. </li>
+		<li>Learn to contribute to OpenStreetMap at <a href="http://learnosm.org" target="_blank">http://learnosm.org</a> and <a href="http://mapgive.state.gov" target="_blank">http://mapgive.state.gov</a>
+		<li>Talk to the OpenStreetMap Philippines community (OSM-PH) by visiting <a href="http://wiki.openstreetmap.org/wiki/Philippines" target="_blank">http://wiki.openstreetmap.org/wiki/Philippines</a>, 
+		  <a href="http://lists.openstreetmap.org/listinfo/talk-ph" target="_blank">joining the mailing-list</a> and <a href="https://www.facebook.com/OSMPH" target="_blank">visiting https://www.facebook.com/OSMPH</a>.</li>
+		<li>For comments and correction on this page, go to: <a href="https://github.com/maning/noroadtown" target="_blank">https://github.com/maning/noroadtown</a>.</li>              
+
+	</ul>
+</div>
+</div> <!-- close col-lg-9 -->
+</div> <!-- close body container -->
+
+<!-- jQuery -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<!-- all compiled plugins -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>  
+</html>

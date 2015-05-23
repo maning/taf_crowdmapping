@@ -1,1 +1,1 @@
-IW:LEARN and OSM Mapping Workshop
+TAF OSM CrowdMapping Workshop in Iloilo
